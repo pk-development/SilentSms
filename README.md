@@ -11,6 +11,8 @@ When the Sniffer thread detects an sms the it sends the SmsData Object to your m
 Once at a stable state and up to coding stardards hoping to implement to into AIMSICD to replace 
 the old crappy model I 1st started of with that has to many issues with threading. 
 
+Root is required on your device to allow app to read logcat radio buffer
+
 ```Java
 
         Handler mHandler = new Handler() {

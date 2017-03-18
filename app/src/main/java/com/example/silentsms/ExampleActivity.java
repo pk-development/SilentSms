@@ -7,7 +7,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.TextView;
 
-import java.util.Hashtable;
+import java.util.Map;
+import java.util.HashMap;
 
 import pk.development.sms.Constants;
 import pk.development.sms.detection.Sniffer;
@@ -30,7 +31,7 @@ public class ExampleActivity extends AppCompatActivity {
             The unique hash is so we don't keep alerting on
             the same logcat line if re-detected.
          */
-        final Hashtable<String, SmsData> testData = new Hashtable<>();
+        final Map<String, SmsData> testData = new HashMap<>();
 
         /*
             If a message is detected in the Sniffer Thread it is
